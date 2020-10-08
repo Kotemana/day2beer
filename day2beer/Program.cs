@@ -10,6 +10,7 @@ namespace day2beer
             Console.WriteLine("Commit something to github");
             Console.WriteLine("Give me Lager");
             Console.WriteLine("Give me Porter");
+            Console.WriteLine("Give me apple juice");
         }
     }
 }
