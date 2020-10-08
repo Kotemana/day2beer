@@ -7,6 +7,7 @@ namespace day2beer
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine("Commit something to github");
         }
     }
 }
