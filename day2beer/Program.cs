@@ -8,6 +8,7 @@ namespace day2beer
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Commit something to github");
+            Console.WriteLine("Give me Lager");
         }
     }
 }
