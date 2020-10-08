@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace day2beer
 {
@@ -6,11 +7,43 @@ namespace day2beer
     {
         static void Main(string[] args)
         {
-            string beer = AskBeerType();
-            GoToCources(beer);
-            Console.WriteLine("Всем пока");
-            boolOperations();
-            SomeMath();
+            //string beer = AskBeerType();
+            //GoToCources(beer);
+            //Console.WriteLine("Всем пока");
+            //boolOperations();
+            //SomeMath();
+            ChoosePerson();
+            GoToBarInCovidTimes();
+        }
+
+        static void GoToBarInCovidTimes()
+        {
+            Console.WriteLine("what is your temp.?");
+            string temp = Console.ReadLine();
+            double Temp = double.Parse(temp);
+            if (Temp <= 35)
+            {
+                Console.WriteLine("go to the graveyard");
+            }
+            else if (Temp < 36.8)
+            {
+                Console.WriteLine("Enter the Bar");
+                           }
+            else if (Temp < 37.2)
+            {
+                Console.WriteLine("Go get some rest");
+            }
+            else {
+                Console.WriteLine("Go to the NAHUY!!!");
+            }
+
+        }
+
+        static void ChoosePerson()
+        {
+            List<string> list = new List<string>() { "Леший", "Вера", "Шакира", "Конь"};
+            var random = new Random();
+            Console.WriteLine(list[random.Next(list.Count)]);
         }
 
         static string AskBeerType()
